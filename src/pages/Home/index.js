@@ -1,10 +1,11 @@
-import React from 'react';
-import Grid from 'react-gridlist';
-import Data from '../../assets/data.json';
-import Lyric from '../../components/Lyric';
-import BilibiliVideo from '../../components/BilibiliVideo';
-import NeteaseMusic from '../../components/NeteaseMusic';
-import StyledWrapper from './styled';
+import React from "react";
+import Grid from "react-gridlist";
+import Data from "../../assets/data.json";
+import Lyric from "../../components/Lyric";
+import BilibiliVideo from "../../components/BilibiliVideo";
+import NeteaseMusic from "../../components/NeteaseMusic";
+import StyledWrapper from "./styled";
+import Footer from "../../components/Footer";
 
 function getGridGap(elementWidth, windowHeight) {
   if (elementWidth > 720 && windowHeight > 480) {
@@ -25,14 +26,14 @@ function getWindowMargin(windowHeight) {
 function getItemData(item) {
   return {
     key: item.aid || item.id,
-    height: item.type == 'netease' ? 120 : 300,
-    ...item
+    ...item,
   };
 }
 
 export default function Home() {
   return (
     <StyledWrapper>
+      <h1 className="header">《笑傲江湖》歌曲集合</h1>
       <Grid
         items={Data}
         getGridGap={getGridGap}
@@ -41,7 +42,7 @@ export default function Home() {
         getItemData={getItemData}
         renderItem={(item) => {
           const { type, ...rest } = item;
-          return type == 'netease' ? (
+          return type == "netease" ? (
             <div key={rest.id} className="item">
               <NeteaseMusic {...rest} />
             </div>
@@ -53,6 +54,7 @@ export default function Home() {
         }}
       />
       <Lyric />
+      <Footer />
     </StyledWrapper>
   );
 }

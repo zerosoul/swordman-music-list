@@ -43,27 +43,28 @@ const ModalWrapper = styled.section`
     bottom: 0;
     animation: ${AniFloat} 3s ease-in-out infinite;
     animation-direction: alternate;
+    width: 15rem;
   }
   article {
     line-height: 1.8;
     padding: 0.6rem 0.8rem;
-    background: rgba(222, 222, 222, 0.4);
+    background: rgba(222, 222, 222, 0.6);
     > p {
       color: #222;
     }
     .title {
       color: #000;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 800;
     }
 
     .author {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       color: #aaa;
       margin-bottom: 0.6rem;
     }
     .content {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 `;

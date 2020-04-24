@@ -31,7 +31,7 @@ const ItemWrapper = styled.div`
     font-size: 1rem;
     width: 100%;
     position: absolute;
-    bottom: -2rem;
+    bottom: -2.2rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;

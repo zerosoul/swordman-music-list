@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 // import ImageBg from './assets/img/bg.png';
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -25,17 +25,18 @@ const GlobalStyle = createGlobalStyle`
   }
   #root{
     background-color:#75878a;
-    padding:1rem 0 2rem 0;
+    padding:1rem 0 0 0;
+
   }
 
   @media screen and (min-width: 320px){
       html {
-          font-size: 12px;
+          font-size: 14px;
       }
   }
   @media screen and (min-width: 375px){
       html {
-          font-size: 14px;
+          font-size: 16px;
       }
   }
   @media screen and (min-width: 480px){

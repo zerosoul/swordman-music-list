@@ -46,7 +46,7 @@ export default function NeteaseMusic({ id = 170749, title = '版本' }) {
         <source src={`http://music.163.com/song/media/outer/url?id=${id}.mp3`} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      <h2>{title}</h2>
+      <h2>🎵{title}🎵</h2>
     </ItemWrapper>
   );
 }
