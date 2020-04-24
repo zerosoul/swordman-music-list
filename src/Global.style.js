@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #root{
     background-color:#75878a;
+    padding:1rem 0 2rem 0;
   }
 
   @media screen and (min-width: 320px){

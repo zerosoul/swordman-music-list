@@ -25,7 +25,7 @@ function getWindowMargin(windowHeight) {
 function getItemData(item) {
   return {
     key: item.aid || item.id,
-    height: item.type == 'netease' ? 100 : 300,
+    height: item.type == 'netease' ? 120 : 300,
     ...item
   };
 }
