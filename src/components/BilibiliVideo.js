@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import ImagePlay from '../assets/img/play.png';
+import React, { useState } from "react";
+import styled from "styled-components";
+import ImagePlay from "../assets/img/play.png";
 const ItemWrapper = styled.div`
   position: relative;
   padding: 30% 45%;
@@ -68,7 +68,8 @@ const ModalWrapper = styled.section`
     position: relative;
     padding: 30% 45%;
 
-    iframe {
+    .bilibili {
+      margin: 0 5px;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -91,11 +92,11 @@ const ModalWrapper = styled.section`
   }
 `;
 export default function BilibiliVideo({
-  aid = '5457973',
-  bvid = 'BV1Vs41117zh',
-  cid = '8869398',
-  cover = 'http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg',
-  title = '标题'
+  aid = "5457973",
+  bvid = "BV1Vs41117zh",
+  cid = "8869398",
+  cover = "http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg",
+  title = "标题",
 }) {
   const [visibile, setVisibile] = useState(false);
   const toggleVisbile = (evt) => {

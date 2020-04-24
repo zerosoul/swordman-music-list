@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
-import ImageBg from '../assets/img/bg.lyric.png';
+import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
+import ImageBg from "../assets/img/bg.lyric.png";
 
 const AniFloat = keyframes`
   from{
@@ -35,6 +35,8 @@ const ModalWrapper = styled.section`
     border-radius: 5px;
     background: none;
     cursor: pointer;
+    font-weight: 800;
+    font-size: 1rem;
   }
   .pic {
     z-index: -1;
@@ -46,6 +48,7 @@ const ModalWrapper = styled.section`
     width: 15rem;
   }
   article {
+    margin-top: -2rem;
     line-height: 1.8;
     padding: 0.6rem 0.8rem;
     background: rgba(222, 222, 222, 0.6);
@@ -79,6 +82,8 @@ const StyledButton = styled.button`
   background: rgba(222, 222, 222);
   cursor: pointer;
   color: #000;
+  font-weight: 800;
+  font-size: 1rem;
 `;
 export default function Lyric() {
   const [visible, setVisible] = useState(false);
