@@ -1,0 +1,90 @@
+[
+  {
+    "type": "bilibili",
+    "aid": "5457973",
+    "bvid": "BV1Vs41117zh",
+    "cid": "8869398",
+    "cover": "http://i0.hdslb.com/bfs/archive/ceefa81095d6864e1a6fba7d8e1c270fba1fd848.jpg",
+    "title": "1990电影版：许冠杰"
+  },
+  {
+    "type": "bilibili",
+    "aid": "13840340",
+    "bvid": "BV1nx41187tu",
+    "cid": "22620867",
+    "cover": "http://i2.hdslb.com/bfs/archive/ac6dbb06c41671628800301c741878db5792c541.jpg",
+    "title": "罗大佑/黄霑/徐克"
+  },
+  {
+    "type": "bilibili",
+    "aid": "12557406",
+    "bvid": "BV1Gx411q7sR",
+    "cid": "20662172",
+    "cover": "http://i0.hdslb.com/bfs/archive/7c188221bddc767a21d9a7c1f6a883bb47a9e2e2.jpg",
+    "title": "黄霑现场版"
+  },
+  {
+    "type": "bilibili",
+    "aid": "21770197",
+    "bvid": "BV1oW411N7i1",
+    "cid": "37163773",
+    "cover": "http://i0.hdslb.com/bfs/archive/7f1c9ecec9641d970f5175b12577f41c135ad462.jpg",
+    "title": "刘欢/陈奕迅/那英/周杰伦"
+  },
+  {
+    "type": "bilibili",
+    "aid": "87955593",
+    "bvid": "BV12741147x9",
+    "cid": "150270983",
+    "cover": "http://i0.hdslb.com/bfs/archive/99635a246de6fc7911230cc03b258f1b4943df2d.jpg",
+    "title": "《我是歌手》GAI"
+  },
+  {
+    "type": "bilibili",
+    "aid": "81753697",
+    "bvid": "BV1EJ41187bv",
+    "cid": "139884522",
+    "cover": "http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg",
+    "title": "山水乐团(大都是障碍人士)"
+  },
+  {
+    "type": "bilibili",
+    "aid": "38608626",
+    "bvid": "BV1Vt411Y7zu",
+    "cid": "67870263",
+    "cover": "http://i1.hdslb.com/bfs/archive/e4111facfb9ba6371629ebb312c8b0d235918879.jpg",
+    "title": "民乐版"
+  },
+  {
+    "type": "bilibili",
+    "aid": "56791988",
+    "bvid": "BV1wx411Z7Z6",
+    "cid": "99205733",
+    "cover": "http://i2.hdslb.com/bfs/archive/4936e72a72e0df7f4798ff7d22719eeb3101f654.jpg",
+    "title": "三人演奏《沧海一声笑》"
+  },
+  {
+    "type": "bilibili",
+    "aid": "56656254",
+    "bvid": "BV1nx411o7z7",
+    "cid": "98980973",
+    "cover": "http://i0.hdslb.com/bfs/archive/99ec20a44523214a1c281d78fc16b3b2f0c8ea2a.jpg",
+    "title": "任贤齐演唱"
+  },
+  {
+    "type": "bilibili",
+    "aid": "13331933",
+    "bvid": "BV13x411H7Xn",
+    "cid": "21851086",
+    "cover": "http://i1.hdslb.com/bfs/archive/e47f4218154fa89789f75b59795bd1b4d0495550.jpg",
+    "title": "中韩歌会演唱会 吴彤"
+  },
+  { "type": "netease", "id": 170749, "title": "许冠杰" },
+  { "type": "netease", "id": 393688, "title": "罗大佑/黄霑/徐克" },
+  { "type": "netease", "id": 28838557, "title": "黄霑" },
+  { "type": "netease", "id": 144382, "title": "任贤齐" },
+  { "type": "netease", "id": 369815, "title": "女子十二乐坊" },
+  { "type": "netease", "id": 1411532260, "title": "肖战" },
+  { "type": "netease", "id": 30031035, "title": "胡伟立（琴箫合奏）" },
+  { "type": "netease", "id": 1400936754, "title": "李少清（古筝）" }
+]

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import ImagePlay from '../assets/img/play.png';
 const ItemWrapper = styled.div`
   position: relative;
   padding: 30% 45%;
@@ -10,10 +11,13 @@ const ItemWrapper = styled.div`
   &:hover {
     transform: scale(1.1);
     z-index: 999;
+    .title {
+      font-size: 1.2rem;
+      opacity: 1;
+    }
   }
   .mask,
-  .loading,
-  .bilibili {
+  .cover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,28 +26,31 @@ const ItemWrapper = styled.div`
     border-radius: 10px;
   }
   .title {
+    transition: all 1s;
+    font-weight: 800;
+    font-size: 1rem;
     width: 100%;
     position: absolute;
     bottom: -2rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-  }
-  .loading {
-    background: rgba(2, 2, 2, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 993;
-    font-size: 1rem;
-    font-weight: 800;
+    opacity: 0.6;
   }
   .mask {
     cursor: pointer;
     z-index: 996;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(222, 222, 222, 0.1);
+    .play {
+      width: 2.2rem;
+    }
   }
-  .bilibili {
+  .cover {
     z-index: 994;
+    width: 100%;
   }
 `;
 const ModalWrapper = styled.section`
@@ -87,6 +94,7 @@ export default function BilibiliVideo({
   aid = '5457973',
   bvid = 'BV1Vs41117zh',
   cid = '8869398',
+  cover = 'http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg',
   title = '标题'
 }) {
   const [visibile, setVisibile] = useState(false);
@@ -97,15 +105,12 @@ export default function BilibiliVideo({
   return (
     <>
       <ItemWrapper>
-        <iframe
-          className="bilibili"
-          src={`//player.bilibili.com/player.html?aid=${aid}&bvid=${bvid}&cid=${cid}&danmaku=0`}
-          frameBorder="no"
-          scrolling="no"
-        ></iframe>
+        <img src={cover} alt="封面图" className="cover" />
+
         <h2 className="title">{title}</h2>
-        <div className="loading">loading</div>
-        <div className="mask" onClick={toggleVisbile}></div>
+        <div className="mask" onClick={toggleVisbile}>
+          <img src={ImagePlay} alt="play image" className="play" />
+        </div>
       </ItemWrapper>
       {visibile && (
         <ModalWrapper onClick={toggleVisbile}>

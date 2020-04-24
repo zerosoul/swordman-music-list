@@ -1,11 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import ImageBg from './assets/img/bg.jpg';
+// import ImageBg from './assets/img/bg.png';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   *{
     box-sizing:border-box;
-    user-select:none;
     outline:none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -15,20 +14,17 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family:"Fangzheng ZY", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+    height:100%;
   }
   body{
     -webkit-overflow-scrolling: touch;
     overflow:scroll;
-    margin:0 auto;
-    min-height:100vh;
+    margin:0;
     position: relative;
+    height:100%;
   }
   #root{
-    min-height:100vh;
-    background-image:url(${ImageBg});
-        background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-color:#75878a;
   }
 
   @media screen and (min-width: 320px){
