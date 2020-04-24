@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-// import ImageBg from './assets/img/bg.png';
+import ImageBg from "./assets/img/bg.noise.png";
 const GlobalStyle = createGlobalStyle`
   ${reset}
   *{
@@ -24,7 +24,9 @@ const GlobalStyle = createGlobalStyle`
     height:100%;
   }
   #root{
-    background-color:#75878a;
+    background-color:#395260;
+    background-image:url(${ImageBg});
+    background-repeat:repeat;
     padding:1rem 0 0 0;
 
   }

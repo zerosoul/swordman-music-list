@@ -7,6 +7,7 @@
     "cover": "http://i0.hdslb.com/bfs/archive/ceefa81095d6864e1a6fba7d8e1c270fba1fd848.jpg",
     "title": "1990电影版：许冠杰"
   },
+  { "type": "netease", "id": 170749, "title": "许冠杰" },
   {
     "type": "bilibili",
     "aid": "13840340",
@@ -15,6 +16,7 @@
     "cover": "http://i2.hdslb.com/bfs/archive/ac6dbb06c41671628800301c741878db5792c541.jpg",
     "title": "罗大佑/黄霑/徐克"
   },
+  { "type": "netease", "id": 393688, "title": "罗大佑/黄霑/徐克" },
   {
     "type": "bilibili",
     "aid": "12557406",
@@ -23,6 +25,7 @@
     "cover": "http://i0.hdslb.com/bfs/archive/7c188221bddc767a21d9a7c1f6a883bb47a9e2e2.jpg",
     "title": "黄霑现场版"
   },
+  { "type": "netease", "id": 28838557, "title": "黄霑" },
   {
     "type": "bilibili",
     "aid": "21770197",
@@ -63,6 +66,8 @@
     "cover": "http://i2.hdslb.com/bfs/archive/4936e72a72e0df7f4798ff7d22719eeb3101f654.jpg",
     "title": "三人演奏《沧海一声笑》"
   },
+  { "type": "netease", "id": 144382, "title": "任贤齐" },
+
   {
     "type": "bilibili",
     "aid": "56656254",
@@ -79,11 +84,8 @@
     "cover": "http://i1.hdslb.com/bfs/archive/e47f4218154fa89789f75b59795bd1b4d0495550.jpg",
     "title": "中韩歌会演唱会 吴彤"
   },
-  { "type": "netease", "id": 170749, "title": "许冠杰" },
-  { "type": "netease", "id": 393688, "title": "罗大佑/黄霑/徐克" },
-  { "type": "netease", "id": 28838557, "title": "黄霑" },
-  { "type": "netease", "id": 144382, "title": "任贤齐" },
   { "type": "netease", "id": 369815, "title": "女子十二乐坊" },
+
   { "type": "netease", "id": 1411532260, "title": "肖战" },
   { "type": "netease", "id": 30031035, "title": "胡伟立（琴箫合奏）" },
   { "type": "netease", "id": 1400936754, "title": "李少清（古筝）" }

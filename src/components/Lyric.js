@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import ImageBg from "../assets/img/bg.lyric.png";
+import ImageNoiseBg from "../assets/img/bg.noise.png";
 
 const AniFloat = keyframes`
   from{
@@ -24,6 +25,8 @@ const ModalWrapper = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #ddd;
+  background-image: url(${ImageNoiseBg});
+  background-repeat: repeat;
   .close {
     color: #000;
     position: absolute;
