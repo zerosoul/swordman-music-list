@@ -17,10 +17,18 @@ const StyledFooter = styled.footer`
 export default function Footer() {
   return (
     <StyledFooter>
-      Created By
+      <a
+        className="link"
+        target="_blank"
+        href="https://github.com/zerosoul/swordman-music-list"
+      >
+        Github
+      </a>
+      & Created By
       <a className="link" target="_blank" href="//yangerxiao.com">
         Tristan
       </a>
+      with ❤️
     </StyledFooter>
   );
 }

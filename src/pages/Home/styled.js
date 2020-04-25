@@ -11,8 +11,16 @@ const StyledWrapper = styled.section`
     padding-bottom: 1rem;
     border-bottom: 2px solid rgba(222, 222, 222, 0.3);
   }
-  .item {
-    padding: 1rem 0.8rem 1.5rem 0.8rem;
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .item {
+      width: 16rem;
+      padding: 1rem 0.8rem 1.4rem 0.8rem;
+      margin-bottom: 1rem;
+    }
   }
 `;
 

@@ -53,7 +53,7 @@ const ModalWrapper = styled.section`
   article {
     margin-top: -2rem;
     line-height: 1.8;
-    padding: 0.6rem 0.8rem;
+    padding: 1rem 2rem;
     background: rgba(222, 222, 222, 0.6);
     > p {
       color: #222;

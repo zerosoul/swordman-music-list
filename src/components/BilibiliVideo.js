@@ -8,12 +8,13 @@ const ItemWrapper = styled.div`
   box-shadow: 0 0 8px 0px #fff;
   transition: transform 1s;
   border-radius: 10px;
+  overflow: hidden;
   &:hover {
     transform: scale(1.1);
     z-index: 999;
     .title {
       font-size: 1.2rem;
-      opacity: 1;
+      opacity: 0.6;
     }
   }
   .mask,
@@ -23,7 +24,6 @@ const ItemWrapper = styled.div`
     height: 100%;
     left: 0;
     top: 0;
-    border-radius: 10px;
   }
   .title {
     transition: all 1s;
@@ -31,11 +31,14 @@ const ItemWrapper = styled.div`
     font-size: 1rem;
     width: 100%;
     position: absolute;
-    bottom: -2.2rem;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    opacity: 0.6;
+
+    padding: 1rem 0;
+    background: linear-gradient(0deg, black, transparent);
+    z-index: 997;
   }
   .mask {
     cursor: pointer;
