@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import ImagePlay from "../assets/img/play.png";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import ImagePlay from '../assets/img/play.png';
 const ItemWrapper = styled.div`
   position: relative;
   padding: 30% 45%;
-  border: 2px solid #eee;
-  box-shadow: 0 0 8px 0px #fff;
+  border: 2px solid #d1d9e0;
+  box-shadow: 0 0 8px 0px #75878a;
   transition: transform 1s;
   border-radius: 10px;
   overflow: hidden;
@@ -35,7 +35,7 @@ const ItemWrapper = styled.div`
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-
+    color: #e3f9fd;
     padding: 1rem 0;
     background: linear-gradient(0deg, black, transparent);
     z-index: 997;
@@ -46,7 +46,7 @@ const ItemWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(222, 222, 222, 0.1);
+    background: rgba(51, 59, 79, 0.2);
     .play {
       width: 2.2rem;
     }
@@ -95,11 +95,11 @@ const ModalWrapper = styled.section`
   }
 `;
 export default function BilibiliVideo({
-  aid = "5457973",
-  bvid = "BV1Vs41117zh",
-  cid = "8869398",
-  cover = "http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg",
-  title = "标题",
+  aid = '5457973',
+  bvid = 'BV1Vs41117zh',
+  cid = '8869398',
+  cover = 'http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg',
+  title = '标题'
 }) {
   const [visibile, setVisibile] = useState(false);
   const toggleVisbile = (evt) => {

@@ -1,10 +1,10 @@
-import React from "react";
-import Data from "../../assets/data.json";
-import Lyric from "../../components/Lyric";
-import BilibiliVideo from "../../components/BilibiliVideo";
-import NeteaseMusic from "../../components/NeteaseMusic";
-import StyledWrapper from "./styled";
-import Footer from "../../components/Footer";
+import React from 'react';
+import Data from '../../assets/data.json';
+import Lyric from '../../components/Lyric';
+import BilibiliVideo from '../../components/BilibiliVideo';
+import NeteaseMusic from '../../components/NeteaseMusic';
+import StyledWrapper from './styled';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -17,11 +17,7 @@ export default function Home() {
           const id = rest.id || rest.aid;
           return (
             <div key={id} className="item">
-              {type == "netease" ? (
-                <NeteaseMusic {...rest} />
-              ) : (
-                <BilibiliVideo {...rest} />
-              )}
+              {type == 'netease' ? <NeteaseMusic {...rest} /> : <BilibiliVideo {...rest} />}
             </div>
           );
         })}
@@ -30,26 +26,4 @@ export default function Home() {
       <Footer />
     </StyledWrapper>
   );
-}
-
-{
-  /* <Grid
-  items={Data}
-  getGridGap={getGridGap}
-  getColumnCount={getColumnCount}
-  getWindowMargin={getWindowMargin}
-  getItemData={getItemData}
-  renderItem={(item) => {
-    const { type, ...rest } = item;
-    return type == 'netease' ? (
-      <div key={rest.id} className="item">
-        <NeteaseMusic {...rest} />
-      </div>
-    ) : (
-      <div key={rest.aid} className="item">
-        <BilibiliVideo {...rest} />
-      </div>
-    );
-  }}
-/>; */
 }
