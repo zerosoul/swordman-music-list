@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
-import ImageBg from "../assets/img/bg.lyric.png";
-import ImageNoiseBg from "../assets/img/bg.noise.png";
+import React, { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import ImageNoiseBg from '../assets/img/bg.noise.png';
+const ImageBg = 'https://gitee.com/zyanggc/oss/raw/master/works/bg.lyric.png';
+const ImageHe = 'https://gitee.com/zyanggc/oss/raw/master/works/bg.he.png';
 
 const AniFloat = keyframes`
   from{
@@ -44,11 +45,21 @@ const ModalWrapper = styled.section`
   .pic {
     z-index: -1;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    animation: ${AniFloat} 3s ease-in-out infinite;
+
+    animation: ${AniFloat} 8s ease-in-out infinite;
     animation-direction: alternate;
-    width: 15rem;
+    &.xia {
+      width: 15rem;
+      left: 0;
+      bottom: 0;
+    }
+    &.he {
+      top: 0;
+      right: 0;
+      width: 10rem;
+      animation-duration: 4s;
+      animation-delay: 1.5s;
+    }
   }
   article {
     margin-top: -2rem;
@@ -95,7 +106,8 @@ export default function Lyric() {
   };
   return visible ? (
     <ModalWrapper>
-      <img src={ImageBg} alt="江湖侠客配图" className="pic" />
+      <img src={ImageBg} alt="江湖侠客配图" className="pic xia" />
+      <img src={ImageHe} alt="闲云野鹤" className="pic he" />
       <article>
         <h2 className="title">沧海一声笑</h2>
         <p className="author">词：黄霑 / 曲：黄霑</p>
