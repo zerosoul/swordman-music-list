@@ -4,10 +4,6 @@ import App from './App';
 import GlobalStyle from './Global.style';
 
 import * as serviceWorker from './serviceWorker';
-// 无load刷新
-if (module && module.hot) {
-  module.hot.accept();
-}
 const Main = (
   <>
     <GlobalStyle />
