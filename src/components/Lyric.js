@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import ImageNoiseBg from '../assets/img/bg.noise.png';
 const ImageBg = 'https://gitee.com/zyanggc/oss/raw/master/works/bg.lyric.png';

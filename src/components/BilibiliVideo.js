@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styled from 'styled-components';
 import ImagePlay from '../assets/img/play.png';
 const ItemWrapper = styled.div`

@@ -1,4 +1,3 @@
-import React from 'react';
 import Data from '../../assets/data.json';
 import Lyric from '../../components/Lyric';
 import BilibiliVideo from '../../components/BilibiliVideo';
