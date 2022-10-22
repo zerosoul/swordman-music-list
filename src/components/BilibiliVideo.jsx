@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import ImagePlay from '../assets/img/play.png';
 const ItemWrapper = styled.div`
@@ -101,10 +101,10 @@ export default function BilibiliVideo({
   cover = 'http://i2.hdslb.com/bfs/archive/5b3856bdbb2029128216c6f17ac83fef9d9d0b46.jpg',
   title = '标题'
 }) {
-  const [visibile, setVisibile] = useState(false);
+  const [visible, setVisible] = useState(false);
   const toggleVisbile = (evt) => {
     evt.stopPropagation();
-    setVisibile((prev) => !prev);
+    setVisible((prev) => !prev);
   };
   return (
     <>
@@ -116,7 +116,7 @@ export default function BilibiliVideo({
           <img src={ImagePlay} alt="play image" className="play" />
         </div>
       </ItemWrapper>
-      {visibile && (
+      {visible && (
         <ModalWrapper onClick={toggleVisbile}>
           <div className="wrapper">
             <iframe
