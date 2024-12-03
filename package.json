@@ -36,7 +36,7 @@
   "bugs": {
     "url": "https://github.com/zerosoul/swordman-music-list/issues"
   },
-  "homepage": "http://swordman-musics.yangerxiao.com",
+  "homepage": "https://swordman-musics.yangerxiao.com/",
   "engines": {
     "node": ">=15.0.0",
     "npm": ">=7.0.0"
